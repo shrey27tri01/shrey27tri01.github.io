@@ -6,6 +6,22 @@ title: Home
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
   <p>
+    I am a Junior at <a href="https://www.iiitb.ac.in/" target="_blank">IIIT Bangalore</a>, pursuing Integrated M.Tech. (B.Tech + M.Tech) in Computer Science and Engineering.  
+  </p>
+  <p>
+    My research interests lie in Graph Theory, Software Engineering, and Blockchain protocols. I am also passionate about and like working on projects in the areas of Artificial Intelligence and Machine Learning.
+  </p>
+  <p>  
+    Currently, I am working as a research intern at the <a href="https://www.iiitb.ac.in/SELab/">Software Engineering Lab</a> at IIITB, under the supervision of <a href="https://www.iiitb.ac.in/SELab/people/sujit.html">Prof. Sujit Kumar Chakrabarti</a>, where we are working on a solution for the Application Processing Problem. I am also a <a href="https://devfolio.co/blog/tif-strikes-back-for-the-next-edition/">Tezos India Fellow</a>, where I am building a Risk Identification and Management Platform for DeFi protocols on the Tezos blockchain.    
+  </p>
+  <p>
+    I have also previously worked as an affiliate at the <a href="http://wsl.iiitb.ac.in/">Web Science Lab</a> at IIITB where I worked under the supervision of <a href="http://wsl.iiitb.ac.in/srinath-srinivasa/">Prof. Srinath Srinivasa</a> on a Capacity Based Access Control portal for the Indian Urban Data Exchange (IUDX). 
+  </p>
+  <p>
+    I also like developing web applications and contributing to open source projects. Apart from that, I like playing and following football (ardent FC Barcelona fan!), chess, and badminton. I also like reading novels, mostly fiction and thriller (am currently reading Shogun by James Clavell!).  
+  </p>
+
+  <!-- <p>
   I am a Postdoc at the department of Management Science and Engineering at Stanford University, working with <a href="https://web.stanford.edu/~jugander/" target="_blank">Johan Ugander</a>. 
   My main research interest is in Computational Social Science.
   I am passionate about developing new computational methods and analyzing large-scale datasets to study important social problems. 
@@ -17,12 +33,12 @@ title: Home
   Before coming to MIT, I spent one year in Paris and one year in Barcelona doing a M.Sc. in Data mining and Knowledge Management. 
   I got my B.Sc. from Staffordshire University with First Class honors in Computer Science. 
   Throughout my graduate studies, I spent several summers doing internships in industry, including Yahoo! Labs, Amazon, LinkedIn, and Facebook.
-  </p>
+  </p> -->
 </div>
 
 
 <!-- ========== PUBLICATIONS ========== -->
-<div class="docs-section" id="publications">
+<!-- <div class="docs-section" id="publications">
   <h4>Publications</h4>
 
   <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
@@ -62,11 +78,6 @@ title: Home
             {% if paper.code %}
               <a class="button" href="{{ paper.code }}" target="_blank">Code</a>
             {% endif %}
-
-            {% if paper.data %}
-              <a class="button" href="{{ paper.data }}" target="_blank">Data</a>
-            {% endif %}
-
           </div>
         </div>
       {% endfor %}
@@ -103,17 +114,15 @@ title: Home
       {% endfor %}
     </div>
   </div>
-</div>
+</div> -->
 
-<!-- ========== PROJECTS ========== 
+<!-- ========== PROJECTS ========== -->
 <div class="docs-section" id="projects">
   <h4>Projects</h4>
-
   <ul class="tab-nav">
     <li><div class="button active" data-ref="#projects-selected">Selected</div></li>
     <li><div class="button" data-ref="#projects-all">All</div></li>
   </ul>
-
   <div class="tab-content">
     <div class="tab-pane active" id="projects-selected">
       {% assign selected_projects = site.data.projects.projects | where: "selected", "y" %}
@@ -122,63 +131,52 @@ title: Home
         {% if index_modulo == 0 %}
           <div class="row">
         {% endif %}
-
           <div class="four columns">
             <div class="project-container">
-
                 <div class="project-image-container">
                   <a href="{{ project.url }}">
                     <img src="{{ project.thumbnail }}" class="u-max-full-width" />
                   </a>
                 </div>
-
                 <div class="project-caption">
                   <b>{{ project.title }}</b> <br/>
                   {{ project.subtitle }}
                 </div>
-
             </div>
           </div>
-
         {% if index_modulo == 2 %}
           </div>
         {% endif %}
       {% endfor %}
+      
     </div>
-
     <div class="tab-pane" id="projects-all">
       {% for project in site.data.projects.projects %}
         {% assign index_modulo = forloop.index0 | modulo:3 %}
         {% if index_modulo == 0 %}
           <div class="row">
         {% endif %}
-
           <div class="four columns">
             <div class="project-container">
-
                 <div class="project-image-container">
                   <a href="{{ project.url }}">
                     <img src="{{ project.thumbnail }}" class="u-max-full-width" />
                   </a>
                 </div>
-
                 <div class="project-caption">
                   <b>{{ project.title }}</b> <br/>
                   {{ project.subtitle }}
                 </div>
-
             </div>
           </div>
-
         {% if index_modulo == 2 %}
           </div>
         {% endif %}
       {% endfor %}
     </div>
   </div>
-
 </div>
--->
+
 
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">

@@ -1,54 +1,165 @@
 projects:
-  - title: "Detecting Network Effects"
-    subtitle: "Randomizing Over Randomized Experiments"
-    thumbnail: "assets/projects/2016_network-ab/thumbnail.jpg"
-    url: "projects/2016_network-ab-testing.html"
+
+  - title: "Pagerank"
+    subtitle: "Rank web pages by importance"
+    thumbnail: "assets/projects/new/pagerank.png"
+    url: "projects/pagerank.html"
+    selected: y
+  
+  - title: "Depocalypse"
+    subtitle: "An integrated decentralized NFT marketplace"
+    thumbnail: "assets/projects/new/depocalypse.png"
+    url: "projects/depocalypse.html"
+    selected: y
+  
+  - title: "Minesweeper"
+    subtitle: "An AI that plays minesweeper"
+    thumbnail: "assets/projects/new/minesweeper.png"
+    url: "projects/minesweeper.html"
+    selected: y
+  
+  - title: "Cache"
+    subtitle: "Implementation of a DM Cache and a 4-way SA Cache"
+    thumbnail: "assets/projects/new/cache.png"
+    url: "projects/cache.html"
     selected: y
 
-  - title: "Human Atlas"
-    subtitle: "Tool for Mapping Social Networks"
-    thumbnail: "assets/projects/2016_human-atlas/thumbnail.png"
-    url: "projects/2016_human-atlas.html"
+  - title: "IAS Architecture"
+    subtitle: "Implementation of the IAS(Princeton) architecture"
+    thumbnail: "assets/projects/new/ias.png"
+    url: "projects/ias.html"
+    selected: y
+  
+  - title: "Image Modifier"
+    subtitle: "Convert a .ppm image from RGB to BRG"
+    thumbnail: "assets/projects/new/imagecpp.png"
+    url: "projects/image.html"
+    selected: y
+  
+  - title: "Package Shipment Management"
+    subtitle: "Modelling Package Shipment Management in Swing"
+    thumbnail: "assets/projects/new/package.png"
+    url: "projects/package.html"
     selected: y
 
-  - title: "Responsive Communities"
-    subtitle: "Pilot project in Jun, Spain"
-    thumbnail: "assets/projects/2015_jun/thumbnail.png"
-    url: "projects/2015_jun.html"
+  - title: "Game Show"
+    subtitle: "A game show using sockets"
+    thumbnail: "assets/projects/new/game.png"
+    url: "projects/game.html"
     selected: y
-
-  - title: "Cold-Start Recommendations"
-    subtitle: "Learning Local Collective Embeddings"
-    thumbnail: "assets/projects/2014_item-cold-start/thumbnail.jpg"
-    url: "projects/2014_item-cold-start.html"
+  
+  - title: "Tic Tac Toe"
+    subtitle: "A tic-tac-toe AI using the minimax algorithm"
+    thumbnail: "assets/projects/new/tictactoe.png"
+    url: "projects/tictactoe.html"
+    selected: y
+  
+  - title: "Hostel Management System"
+    subtitle: "C implementation of a Hostel Management System"
+    thumbnail: "assets/projects/new/hostel.png"
+    url: "projects/hostel.html"
     selected: n
 
-  - title: "Semi-supervised Learning"
-    subtitle: "Iterative Hybrid Algorithm"
-    thumbnail: "assets/projects/2013_iterative-hybrid-algorithm/thumbnail.jpg"
-    url: "projects/2013_iterative-hybrid-algorithm.html"
+  - title: "DAA - Final Project"
+    subtitle: "Final project for CS-202 Design and Analysis of Algorithms"
+    thumbnail: "assets/projects/new/daa.png"
+    url: "projects/daa.html"
     selected: n
 
-  - title: "Twitter Sentiment Analysis"
-    subtitle: "Analyzing Financial Tweets"
-    thumbnail: "assets/projects/2011_twitter-sentiment-analysis/thumbnail.png"
-    url: "projects/2011_twitter-sentiment-analysis.html"
+  - title: "just-post-it"
+    subtitle: "A twitter-like social network"
+    thumbnail: "assets/projects/new/post.png"
+    url: "projects/post.html"
     selected: n
 
-  - title: "Wordnet Construction"
-    subtitle: "Automatic Wordnet Construction using Language Models"
-    thumbnail: "assets/projects/2010_wordnet-construction/thumbnail.jpg"
-    url: "projects/2010_wordnet-contruction.html"
+  - title: "reviewyourreads"
+    subtitle: "A book review application"
+    thumbnail: "assets/projects/new/review.png"
+    url: "projects/review.html"
+    selected: n
+  
+  - title: "Degrees of Separation"
+    subtitle: "Determine the degrees of separation of two actors"
+    thumbnail: "assets/projects/new/degrees.png"
+    url: "projects/degrees.html"
     selected: n
 
-  - title: "Fingerprint Verification"
-    subtitle: "Image processing class project"
-    thumbnail: "assets/projects/2010_fingerprint-verification/thumbnail.png"
-    url: "projects/2010_fingerprint-verification.html"
+  - title: "Wiki"
+    subtitle: "A Wikipedia-like online encyclopedia"
+    thumbnail: "assets/projects/new/wiki.png"
+    url: "projects/wiki.html"
     selected: n
 
-  - title: "Connect Four AI Agent"
-    subtitle: "Iterative deepening and alpha-beta pruning"
-    thumbnail: "assets/projects/2009_connect-four/thumbnail.png"
-    url: "projects/2009_connect-four.html"
+  - title: "Flatroom"
+    subtitle: "An IRC-style chat application using sockets"
+    thumbnail: "assets/projects/new/flatroom.png"
+    url: "projects/flatroom.html"
     selected: n
+
+  - title: "savetimewithus"
+    subtitle: "A todo list with a twist"
+    thumbnail: "assets/projects/new/savetime.jpg"
+    url: "projects/savetime.html"
+    selected: n
+
+  - title: "Navigation System"
+    subtitle: "Modelling roads, intersections and routes"
+    thumbnail: "assets/projects/new/navigation.png"
+    url: "projects/navigation.html"
+    selected: n
+  
+  # -----------------------------------------------------------------------
+  
+  # - title: "Detecting Network Effects"
+  #   subtitle: "Randomizing Over Randomized Experiments"
+  #   thumbnail: "assets/projects/2016_network-ab/thumbnail.jpg"
+  #   url: "projects/2016_network-ab-testing.html"
+  #   selected: y
+
+  # - title: "Human Atlas"
+  #   subtitle: "Tool for Mapping Social Networks"
+  #   thumbnail: "assets/projects/2016_human-atlas/thumbnail.png"
+  #   url: "projects/2016_human-atlas.html"
+  #   selected: y
+
+  # - title: "Responsive Communities"
+  #   subtitle: "Pilot project in Jun, Spain"
+  #   thumbnail: "assets/projects/2015_jun/thumbnail.png"
+  #   url: "projects/2015_jun.html"
+  #   selected: y
+
+  # - title: "Cold-Start Recommendations"
+  #   subtitle: "Learning Local Collective Embeddings"
+  #   thumbnail: "assets/projects/2014_item-cold-start/thumbnail.jpg"
+  #   url: "projects/2014_item-cold-start.html"
+  #   selected: n
+
+  # - title: "Semi-supervised Learning"
+  #   subtitle: "Iterative Hybrid Algorithm"
+  #   thumbnail: "assets/projects/2013_iterative-hybrid-algorithm/thumbnail.jpg"
+  #   url: "projects/2013_iterative-hybrid-algorithm.html"
+  #   selected: n
+
+  # - title: "Twitter Sentiment Analysis"
+  #   subtitle: "Analyzing Financial Tweets"
+  #   thumbnail: "assets/projects/2011_twitter-sentiment-analysis/thumbnail.png"
+  #   url: "projects/2011_twitter-sentiment-analysis.html"
+  #   selected: n
+
+  # - title: "Wordnet Construction"
+  #   subtitle: "Automatic Wordnet Construction using Language Models"
+  #   thumbnail: "assets/projects/2010_wordnet-construction/thumbnail.jpg"
+  #   url: "projects/2010_wordnet-contruction.html"
+  #   selected: n
+
+  # - title: "Fingerprint Verification"
+  #   subtitle: "Image processing class project"
+  #   thumbnail: "assets/projects/2010_fingerprint-verification/thumbnail.png"
+  #   url: "projects/2010_fingerprint-verification.html"
+  #   selected: n
+
+  # - title: "Connect Four AI Agent"
+  #   subtitle: "Iterative deepening and alpha-beta pruning"
+  #   thumbnail: "assets/projects/2009_connect-four/thumbnail.png"
+  #   url: "projects/2009_connect-four.html"
+  #   selected: n
