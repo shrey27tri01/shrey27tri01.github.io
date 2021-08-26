@@ -1,7 +1,9 @@
+domain: shrey27tri01.github.io
+url: https://shrey27tri01.github.io
 source:      .
 destination: ./_site
 includes:    ./_includes
-baseurl: /~shrey27tri01
+baseurl: 
 
 collections:
   projects:
