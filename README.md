@@ -1,4 +1,6 @@
-# Martin Saveski's Website
+# Shrey Tripathi's Website
+
+Forked from [msaveski/www_personal](https://github.com/msaveski/www_personal).
 
 ## Updates guide
 Change one of the files in `_data`, unless you are changing the look of the website.
@@ -8,16 +10,16 @@ Test changes with:
 jekyll serve
 ```
 
-Push to the ML web directory:
+<!-- Push to the ML web directory:
 ```
 rm -rf public_html
 mkdir public_html
 ```
 ```
 ./__deploy.sh
-```
+``` -->
 
-More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal).
+<!-- More info on the [Media Lab wiki](http://wiki.media.mit.edu/view/Necsys/WebPagePersonal). -->
 
 
 ## External Libraries
