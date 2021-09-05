@@ -4,6 +4,7 @@ source:      .
 destination: ./_site
 includes:    ./_includes
 baseurl: 
+google_analytics: G-RC7VSHBTX6
 
 collections:
   projects:
