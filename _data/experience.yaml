@@ -12,10 +12,17 @@ experiences:
 #   subtitle: "Media Lab, Laboratory for Social Machines"
 #   category: "school"
 
+- place: "Teaching Assistant"
+  time: "Nov 2021 - now"
+  title: "Programming - 1 (Python)"
+  subtitle: "Course instructor: Dr. Milind Gandhe"
+  category: "work"
+
+
 - place: "Tezos India"
-  time: "Aug 2021 - now"
+  time: "Aug 2021 - Oct 2021"
   title: "Tezos India Fellow"
-  subtitle: "Transfer of digital assets in extreme scenarios"
+  subtitle: "Transfer of digital assets in unprecedented scenarios"
   category: "school"
 
 - place: "Software Engineering Lab, IIITB"

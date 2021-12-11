@@ -1,5 +1,11 @@
 projects:
 
+  - title: "CryptoWill"
+    subtitle: "Your digital will for cryptocurrencies"
+    thumbnail: "assets/projects/new/cryptowill.png"
+    url: "projects/cryptowill.html"
+    selected: y
+
   - title: "Pagerank"
     subtitle: "Rank web pages by importance"
     thumbnail: "assets/projects/new/pagerank.png"
@@ -46,7 +52,7 @@ projects:
     subtitle: "A game show using sockets"
     thumbnail: "assets/projects/new/game.png"
     url: "projects/game.html"
-    selected: y
+    selected: n
   
   - title: "Tic Tac Toe"
     subtitle: "A tic-tac-toe AI using the minimax algorithm"
