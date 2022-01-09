@@ -1,5 +1,11 @@
 projects:
 
+  - title: "AskReddit troll Question Detection"
+    subtitle: "Detection of troll questions on r/AskReddit, a popular subreddit"
+    thumbnail: "assets/projects/new/askreddit.png"
+    url: "projects/askreddit.html"
+    selected: y
+
   - title: "CryptoWill"
     subtitle: "Your digital will for cryptocurrencies"
     thumbnail: "assets/projects/new/cryptowill.png"
@@ -40,7 +46,7 @@ projects:
     subtitle: "Convert a .ppm image from RGB to BRG"
     thumbnail: "assets/projects/new/imagecpp.png"
     url: "projects/image.html"
-    selected: y
+    selected: n
   
   - title: "Package Shipment Management"
     subtitle: "Modelling Package Shipment Management in Swing"
