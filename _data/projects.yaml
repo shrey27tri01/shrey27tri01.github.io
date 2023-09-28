@@ -1,10 +1,22 @@
 projects:
 
+  - title: "Swasthya Suraksha: A streamlined ABDM framework"
+    subtitle: "Seamless exchange of medical records across establishments"
+    thumbnail: "assets/projects/new/swasthya.png"
+    url: "projects/swasthya.html"
+    selected: y
+  
   - title: "AskReddit troll Question Detection"
     subtitle: "Detection of troll questions on r/AskReddit, a popular subreddit"
     thumbnail: "assets/projects/new/askreddit.png"
     url: "projects/askreddit.html"
-    selected: y
+    selected: n
+
+  - title: "Bias Correction in NWP model"
+    subtitle: "Prediction and visualization of bias-corrected temperature from the Numerical Weather Prediction (NWP) model"
+    thumbnail: "assets/projects/new/sih.png"
+    url: "projects/sih.html"
+    selected: n
 
   - title: "CryptoWill"
     subtitle: "Your digital will for cryptocurrencies"
@@ -52,7 +64,7 @@ projects:
     subtitle: "Modelling Package Shipment Management in Swing"
     thumbnail: "assets/projects/new/package.png"
     url: "projects/package.html"
-    selected: y
+    selected: n
 
   - title: "Game Show"
     subtitle: "A game show using sockets"
@@ -82,7 +94,7 @@ projects:
     subtitle: "A twitter-like social network"
     thumbnail: "assets/projects/new/post.png"
     url: "projects/post.html"
-    selected: n
+    selected: y
 
   - title: "reviewyourreads"
     subtitle: "A book review application"
