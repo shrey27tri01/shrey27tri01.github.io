@@ -1,4 +1,10 @@
-# papers:
+papers:
+
+  - title: "Automated Application Processing"
+    authors: "Eshita Sharma, Keshav Gupta, Lubaina Machinewala, Samaksh Dhingra, <b>Shrey Tripathi</b>, V S Shreyas & Sujit Kumar Chakrabarti"
+    venue: "Sadhana <b>47</b>, 244 (Indian Academy of Sciences)"
+    paper_pdf: "/assets/publications/2022_APP/2204.08695.pdf"
+    selected: y
 
 #   - title: "The Structure of Toxic Conversations on Twitter"
 #     authors: "<b>Martin Saveski</b>, Brandon Roy, Deb Roy"
