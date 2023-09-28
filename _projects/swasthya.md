@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Swasthya Suraksha: A streamlined ABDM framework
+title: Swasthya Suraksha, a streamlined ABDM framework
 subtitle: Seamless exchange of medical records across establishments
 ---
 
