@@ -20,7 +20,7 @@ experiences:
 
 - place: "Teaching Assistant"
   time: "Aug 2022 - Dec 2022"
-  title: "Software Engineering"
+  title: "CS303 Software Engineering"
   subtitle: "Course instructor: Dr. Sujit Kumar Chakrabarti"
   category: "work"
 
@@ -32,7 +32,7 @@ experiences:
 
 - place: "Teaching Assistant"
   time: "Nov 2021 - Mar 2022"
-  title: "Programming - 1 (Python)"
+  title: "ESS112 Programming - 1 (Python)"
   subtitle: "Course instructor: Dr. Milind Gandhe"
   category: "work"
 
@@ -40,13 +40,13 @@ experiences:
   time: "May 2021 - May 2022"
   title: "Research Intern"
   subtitle: "Automated Application Processing (<a href='https://link.springer.com/article/10.1007/s12046-022-02022-x'>paper</a>)"
-  category: "work"
+  category: "school"
 
 - place: "Tezos India"
   time: "Aug 2021 - Oct 2021"
   title: "Tezos India Fellow"
   subtitle: "CryptoWill: transfer of digital assets in unprecedented scenarios"
-  category: "school"
+  category: "work"
 
 - place: "Web Science Lab, IIITB"
   time: "Jan 2021 - May 2021"
@@ -75,5 +75,5 @@ experiences:
 - place: "Airport School, Ahmedabad"
   time: "2015 - 2019"
   title: "High School"
-  subtitle: "Science (Physics, Chemistry, Maths) <br/> 12th aggregate: 90.8% <br/> 10th CGPA: 10/10"
+  subtitle: "Science (Physics, Chemistry, Mathematics) <br/> 12th aggregate: 90.8% <br/> 10th CGPA: 10/10"
   category: "school"
