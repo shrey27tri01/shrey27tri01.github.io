@@ -3,12 +3,12 @@ entries:
   - title: "Contributions to the Dhīr foundation-model program"
     date_label: "Preparing for release · October 2026"
     summary: "I lead post-training work within ZenteiQ’s foundation-model program, connecting supervised fine-tuning, reinforcement learning, evaluation, and release preparation. Our team is preparing its first 2B and 5B model releases."
-    contribution: "Post-training leadership, coordination of data and evaluation work, and contributions to safety and release preparation."
+    contribution: "Post-training leadership, coordination of data and evaluation work, and contributions to safety and release preparation. I built reinforcement-learning post-training infrastructure for three task families (single-turn instruction following, stateful multi-turn dialogue, and sandboxed code execution) and the preference-data and reward-scoring pipeline that produces SFT and DPO-ready training corpora."
 
   - title: "Platforms for data generation and post-training"
     date_label: "Ongoing engineering work"
     summary: "I contribute to the platform and infrastructure behind our synthetic-data and post-training workflows. The work connects research jobs with data stores, orchestration, monitoring, and human review."
-    contribution: "Platform infrastructure and integration, including container deployment, databases, human-review tooling, and development controls for inspecting model responses; broader platform work is a team effort."
+    contribution: "I architected the synthetic-data generation pipeline, defining its stage model across seed selection, candidate generation, teacher and evaluator workflows, deterministic verification, and human-review hooks, with durable run, stage and candidate state across Postgres, Yugabyte and Kafka so runs resume after worker failures. I also built a document embedding and vector-indexing service on Milvus, and worked on container deployment, human-review tooling, and development controls for inspecting model responses. Broader platform work is a team effort."
 
   - title: "Safety evaluation and release documentation"
     date_label: "Ongoing model-development work"
@@ -18,7 +18,7 @@ entries:
   - title: "GPU and TPU inference systems"
     date_label: "Serving and systems engineering"
     summary: "I work on inference deployments using vLLM, GPUs, TPUs, and Kubernetes. I have built inference-gateway components for model routing, access controls, backend adaptation, streaming responses, and observability, alongside serving configuration and investigations into latency and reliability."
-    contribution: "Inference gateway implementation, backend integration, metrics and routing regression tests, serving operations, and analysis of inference behavior."
+    contribution: "I deployed foundation models to TPU-backed inference on Google Kubernetes Engine with Helm and Terraform (accelerator allocation, node pools, IAM, canary rollouts), and integrated llm-d with KV-cache-aware routing in place of round-robin balancing. I also worked on inference gateway implementation, backend integration, metrics and routing regression tests, and analysis of inference behavior."
 
   - title: "Backend platforms and developer infrastructure"
     date_label: "Platform engineering"

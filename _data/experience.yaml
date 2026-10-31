@@ -3,13 +3,19 @@ experiences:
 - place: "ZenteiQ"
   time: "Jun 2024 - now"
   title: "Lead Software Engineer"
-  subtitle: "Foundation model research and engineering <br/> Leading post-training for the Dhīr program; data, evaluation, safety, and GPU/TPU inference systems"
+  subtitle: "Foundation model research and engineering <br/> Leading post-training for the Dhīr program; synthetic data, RL and preference pipelines, TPU inference"
   category: "work"
 
 - place: "AiREX Lab, IISc"
   time: "Jun 2024 - Mar 2025"
   title: "Project Associate"
   subtitle: "Indian Institute of Science, Bangalore (alongside ZenteiQ)"
+  category: "work"
+
+- place: "Contlo"
+  time: "Jan 2024 - Jun 2024"
+  title: "Backend Engineer Intern"
+  subtitle: "Re-architected campaign delivery from a Rails monolith to Spring Boot and Kafka microservices; send latency reduced from 30 min to 5 sec"
   category: "work"
 
 - place: "MathWorks"
@@ -25,7 +31,7 @@ experiences:
   category: "work"
 
 - place: "NSM Nodal Center, IIT Madras"
-  time: "May 2022 - July 2022"
+  time: "May 2022 - Aug 2022"
   title: "Research Intern"
   subtitle: "Accelerating sparse Deep Neural Networks (DNNs) using GPUs"
   category: "school"
