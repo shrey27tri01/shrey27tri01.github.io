@@ -95,7 +95,7 @@
             <h1>{{ site.data.main_info.name }}</h1>
             <p>{{ site.data.main_info.title }}</p>
             <p>{{ site.data.main_info.role_line }}</p>
-            <p><a href="mailto:{{ site.data.main_info.email }}">{{ site.data.main_info.email }}</a></p>
+            <p>{{ site.data.main_info.email }}</p>
             <p>
               <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -138,7 +138,7 @@
           {{ site.data.main_info.name }}
         </div>
         <div class="four columns">
-          <a href="mailto:{{ site.data.main_info.email }}">{{ site.data.main_info.email }}</a>
+          {{ site.data.main_info.email }}
         </div>
         <div class="four columns">
           <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
