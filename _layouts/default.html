@@ -6,31 +6,64 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
   <title>{% if page.layout == 'default' and page.title == 'Home' %}{{ site.data.main_info.name }} | {{ site.data.main_info.title }}{% else %}{{ site.data.main_info.name }} | {{ page.title }}{% endif %}</title>
-  <meta name="description" content="{{ site.data.main_info.description }}">
+  {% assign page_desc = page.subtitle | default: site.data.main_info.description %}
+  <meta name="description" content="{{ page_desc | strip_html | escape }}">
   <meta name="author" content="{{ site.data.main_info.name }}">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta property="og:title" content="{{ site.data.main_info.name }} | {{ site.data.main_info.title }}" />
-  <meta property="og:description" content="{{ site.data.main_info.description }}" />
-  <meta property="og:type" content="website" />
+  <meta property="og:description" content="{{ page_desc | strip_html | escape }}" />
+  <meta property="og:type" content="{% if page.url == '/' %}profile{% else %}website{% endif %}" />
   <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
   <meta property="og:site_name" content="{{ site.data.main_info.name }}" />
+  <meta property="og:image" content="{{ site.url }}{{ site.data.main_info.profile_pic }}" />
+  <meta property="og:image:alt" content="Portrait of {{ site.data.main_info.name }}" />
+  <meta property="profile:first_name" content="Shrey" />
+  <meta property="profile:last_name" content="Tripathi" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="{{ site.data.main_info.name }} | {{ site.data.main_info.title }}" />
+  <meta name="twitter:description" content="{{ page_desc | strip_html | escape }}" />
+  <meta name="twitter:image" content="{{ site.url }}{{ site.data.main_info.profile_pic }}" />
   <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "url": "{{ site.url }}/",
-    "mainEntity": {
-      "@type": "Person",
-      "@id": "{{ site.url }}/#person",
-      "name": "{{ site.data.main_info.name }}",
-      "url": "{{ site.url }}/",
-      "description": "Foundation model research and engineering; currently leading post-training at ZenteiQ",
-      "sameAs": [
-        "{{ site.data.main_info.github }}",
-        "{{ site.data.main_info.linkedin }}",
-        "{{ site.data.main_info.google_scholar }}"
-      ]
-    }
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ site.url }}/#website",
+        "url": "{{ site.url }}/",
+        "name": "{{ site.data.main_info.name }}",
+        "alternateName": ["Shrey Tripathi", "shreytripathi.com"],
+        "inLanguage": "en"
+      },
+      {
+        "@type": "ProfilePage",
+        "@id": "{{ site.url }}/#profile",
+        "url": "{{ site.url }}/",
+        "name": "{{ site.data.main_info.name }} | {{ site.data.main_info.title }}",
+        "isPartOf": { "@id": "{{ site.url }}/#website" },
+        "mainEntity": { "@id": "{{ site.url }}/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "{{ site.url }}/#person",
+        "name": "{{ site.data.main_info.name }}",
+        "givenName": "Shrey",
+        "familyName": "Tripathi",
+        "url": "{{ site.url }}/",
+        "image": "{{ site.url }}{{ site.data.main_info.profile_pic }}",
+        "description": "Foundation model research and engineering; currently leading post-training at ZenteiQ",
+        "knowsAbout": ["Foundation models", "Post-training", "Reinforcement learning", "Synthetic data", "Model evaluation", "ML systems", "LLM inference"],
+        "worksFor": { "@type": "Organization", "name": "ZenteiQ" },
+        "alumniOf": { "@type": "CollegeOrUniversity", "name": "International Institute of Information Technology Bangalore" },
+        "sameAs": [
+          "{{ site.data.main_info.github }}",
+          "{{ site.data.main_info.linkedin }}",
+          "{{ site.data.main_info.google_scholar }}",
+          "{{ site.data.main_info.twitter }}"
+        ]
+      }
+    ]
   }
   </script>
 
@@ -89,7 +122,7 @@
     <section class="header">
       <div class="row">
         <div class="three columns">
-          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
+          <a href="{{ site.baseurl }}/"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}' alt='Portrait of {{ site.data.main_info.name }}' width='600' height='600'></a>
         </div>
         <div class="nine columns main-description">
             <h1>{{ site.data.main_info.name }}</h1>
