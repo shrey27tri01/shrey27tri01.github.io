@@ -1,28 +1,16 @@
 experiences:
 
 - place: "ZenteiQ"
-  time: "Present"
-  title: "Foundation Model Research and Engineering"
-  subtitle: "Leading post-training for the Dhīr foundation-model program <br/> Data, evaluation, safety, and GPU/TPU inference systems"
+  time: "Jun 2024 - now"
+  title: "Lead Software Engineer"
+  subtitle: "Foundation model research and engineering <br/> Leading post-training for the Dhīr program; data, evaluation, safety, and GPU/TPU inference systems"
   category: "work"
 
 - place: "AiREX Lab, IISc"
-  time: ""
+  time: "Jun 2024 - Mar 2025"
   title: "Project Associate"
-  subtitle: "Indian Institute of Science, Bangalore"
+  subtitle: "Indian Institute of Science, Bangalore (alongside ZenteiQ)"
   category: "work"
-
-# - place: "Stanford"
-#   time: "2020 - now"
-#   title: "Postdoc"
-#   subtitle: "MS&E"
-#   category: "work"
-
-# - place: "MIT"
-#   time: "2014 - 2020"
-#   title: "Ph.D. Student"
-#   subtitle: "Media Lab, Laboratory for Social Machines"
-#   category: "school"
 
 - place: "MathWorks"
   time: "May 2023 - July 2023"
