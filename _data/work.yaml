@@ -1,0 +1,35 @@
+entries:
+
+  - title: "Contributions to the Dhīr foundation-model program"
+    date_label: "Preparing for release · October 2026"
+    summary: "I lead post-training work within ZenteiQ’s foundation-model program, connecting supervised fine-tuning, reinforcement learning, evaluation, and release preparation. Our team is preparing its first 2B and 5B model releases."
+    contribution: "Post-training leadership, coordination of data and evaluation work, and contributions to safety and release preparation."
+
+  - title: "Platforms for data generation and post-training"
+    date_label: "Ongoing engineering work"
+    summary: "I contribute to the platform and infrastructure behind our synthetic-data and post-training workflows. The work connects research jobs with data stores, orchestration, monitoring, and human review."
+    contribution: "Platform infrastructure and integration, including container deployment, databases, human-review tooling, and development controls for inspecting model responses; broader platform work is a team effort."
+
+  - title: "Safety evaluation and release documentation"
+    date_label: "Ongoing model-development work"
+    summary: "I contribute to safety-data design, red-teaming, and the safety section of our model documentation. The work includes examining harmful responses, unnecessary refusals, language coverage, and the relationship between evaluation results and release decisions."
+    contribution: "Safety evaluation planning and analysis, red-team planning, and co-ownership of safety documentation."
+
+  - title: "GPU and TPU inference systems"
+    date_label: "Serving and systems engineering"
+    summary: "I work on inference deployments using vLLM, GPUs, TPUs, and Kubernetes. I have built inference-gateway components for model routing, access controls, backend adaptation, streaming responses, and observability, alongside serving configuration and investigations into latency and reliability."
+    contribution: "Inference gateway implementation, backend integration, metrics and routing regression tests, serving operations, and analysis of inference behavior."
+
+  - title: "Backend platforms and developer infrastructure"
+    date_label: "Platform engineering"
+    summary: "At ZenteiQ, I have built and maintained Python and Go services, shared database and messaging infrastructure, API authentication, graph-backed data workflows, and reusable CI/CD and Kubernetes deployment tooling. This work supports product teams and the systems used by model-development teams."
+    contribution: "Backend implementation, shared Python clients, Go CDC and graph services, deployment workflows, developer tooling, cross-repository reviews, and technical coordination."
+
+  - title: "Synthetic data generation prototype"
+    status_label: "prototype"
+    date_label: "Public prototype · March 2026"
+    summary: "I built a synthetic-data generation prototype with document ingestion, configurable teacher roles, bounded repair, verification, and versioned JSONL corpus assembly. I added Vertex AI and Kubeflow integration for parallel generation, cloud artifact handling, and review-queue handoff."
+    contribution: "Generation and orchestration implementation in two authored commits; training, evaluation, recovery and governance components remain incomplete."
+    link:
+      label: "Repository"
+      url: "https://github.com/shrey-zenteiq-ai/brahmx-sdg"

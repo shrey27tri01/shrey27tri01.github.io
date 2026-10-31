@@ -5,14 +5,34 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
-  <meta name="description" content="Martin Saveski">
-  <meta name="author" content="Martin Saveski">
-  <meta property="og:title" content="Martin Saveski" />
+  <title>{% if page.layout == 'default' and page.title == 'Home' %}{{ site.data.main_info.name }} | {{ site.data.main_info.title }}{% else %}{{ site.data.main_info.name }} | {{ page.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.data.main_info.description }}">
+  <meta name="author" content="{{ site.data.main_info.name }}">
+  <meta property="og:title" content="{{ site.data.main_info.name }} | {{ site.data.main_info.title }}" />
+  <meta property="og:description" content="{{ site.data.main_info.description }}" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="http://www.martinsaveski.com" />
-  <meta property="og:site_name" content="Martin Saveski" />
-  <link rel="canonical" href="http://www.martinsaveski.com" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:site_name" content="{{ site.data.main_info.name }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "url": "{{ site.url }}/",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "{{ site.url }}/#person",
+      "name": "{{ site.data.main_info.name }}",
+      "url": "{{ site.url }}/",
+      "description": "Foundation model research and engineering; currently leading post-training at ZenteiQ",
+      "sameAs": [
+        "{{ site.data.main_info.github }}",
+        "{{ site.data.main_info.linkedin }}",
+        "{{ site.data.main_info.google_scholar }}"
+      ]
+    }
+  }
+  </script>
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -74,7 +94,7 @@
         <div class="nine columns main-description">
             <h1>{{ site.data.main_info.name }}</h1>
             <p>{{ site.data.main_info.title }}</p>
-            <p>{{ site.data.main_info.email }}</p>
+            <p>{{ site.data.main_info.role_line }}</p>
             <p>
               <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -101,6 +121,7 @@
       <div class="container">
         <ul class="navbar-list">
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#bio" | prepend: site.baseurl }}>Bio</a></li>
+          <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#work" | prepend: site.baseurl }}>Work</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#projects" | prepend: site.baseurl }}>Projects</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#publications" | prepend: site.baseurl }}>Publications</a></li>
           <li class="navbar-item"><a class="navbar-link" href={{ "/index.html#resume" | prepend: site.baseurl }}>Vita</a></li>
@@ -116,7 +137,7 @@
           {{ site.data.main_info.name }}
         </div>
         <div class="four columns">
-          {{ site.data.main_info.email }}
+          <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>
         </div>
         <div class="four columns">
           <span onclick="window.open('{{ site.data.main_info.twitter }}')" style="cursor: pointer">

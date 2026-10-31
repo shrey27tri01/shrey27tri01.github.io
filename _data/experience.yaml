@@ -1,5 +1,17 @@
 experiences:
 
+- place: "ZenteiQ"
+  time: "Present"
+  title: "Foundation Model Research and Engineering"
+  subtitle: "Leading post-training for the Dhīr foundation-model program <br/> Data, evaluation, safety, and GPU/TPU inference systems"
+  category: "work"
+
+- place: "AiREX Lab, IISc"
+  time: ""
+  title: "Project Associate"
+  subtitle: "Indian Institute of Science, Bangalore"
+  category: "work"
+
 # - place: "Stanford"
 #   time: "2020 - now"
 #   title: "Postdoc"
@@ -15,7 +27,7 @@ experiences:
 - place: "MathWorks"
   time: "May 2023 - July 2023"
   title: "Summer Intern in Engineering and Development Group (EDG)"
-  subtitle: "Report generation for Model Advisor"
+  subtitle: "Report generation for Simulink Model Advisor"
   category: "school"
 
 - place: "Teaching Assistant"
@@ -67,9 +79,9 @@ experiences:
 #   category: "school"
 
 - place: "IIIT Bangalore"
-  time: "Aug 2019 – now"
+  time: "Aug 2019 – 2024"
   title: "Integrated M.Tech. Student"
-  subtitle: "Computer Science and Engineeering <br/> CGPA: 3.18/4.00"
+  subtitle: "Computer Science and Engineering"
   category: "work"
 
 - place: "Airport School, Ahmedabad"
